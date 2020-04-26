@@ -61,7 +61,8 @@ class AutoFactory(object):
         for name, _type in classes:
             if isclass(_type) and issubclass(_type, abs_class[0][1]):
                 self.autos.update([[name, _type]])
-      
+        print(self.autos)
+
     def create_instance(self, carname):
         if carname in self.autos:
             return self.autos[carname](carname)
