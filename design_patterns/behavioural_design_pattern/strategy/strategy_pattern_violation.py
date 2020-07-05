@@ -1,14 +1,17 @@
 """
-Violates SRP
-Violates Open/Clsed Principle
-Violates DIP
-Log list of if/elif clauses
+Design Patterns: An example where a
+    Strategy pattern can be applied.
+The following example has the following cons:
+1. Violates SRP
+2. Violates Open/Closed Principle
+3. Violates DIP
+4. Log list of if/elif clauses
 
-Done better with Strategy
+This can be handled better with Strategy Pattern
 """
 
 
-class Order(object):
+class Order:
     def __init__(self, shipper):
         self._shipper = shipper
     
@@ -17,7 +20,7 @@ class Order(object):
         return self._shipper
 
 
-class Shipper(object):
+class Shipper:
     fedex = 1
     ups = 2
     postal = 3
@@ -26,7 +29,7 @@ class Shipper(object):
         pass
 
 
-class ShippingCost(object):
+class ShippingCost:
     # Violates Open Close Principle
     # Usage of too many if else a red flag
     def shipping_cost(self, order):

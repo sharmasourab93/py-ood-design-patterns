@@ -1,4 +1,4 @@
-from abc import ABCMeta, abstractmethod
+from abc import ABC, abstractmethod
 
 """
 Variations
@@ -13,14 +13,13 @@ No more if/elif/else
 
 
 # Dependency Inversion Patter strategy
-class Order(object):
+class Order:
     def __init__(self):
         #self._shipper = shipper
         pass
 
 
-class AbsStrategy(object):
-    __metaclass__ = ABCMeta
+class AbsStrategy(ABC):
     
     @abstractmethod
     def calculate(self, order):
@@ -43,7 +42,7 @@ class UPSStrategy(AbsStrategy):
         return 5
 
 
-class ShippingCost(object):
+class ShippingCost:
     def __init__(self, strategy):
         self._strategy = strategy
         
