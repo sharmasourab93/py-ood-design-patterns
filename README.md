@@ -1,6 +1,6 @@
 # Python Design Patterns
 
-####Sections Covered under following folders
+#### Sections Covered under following folders
    
 1. Design Principles
 2. Design Patterns 
