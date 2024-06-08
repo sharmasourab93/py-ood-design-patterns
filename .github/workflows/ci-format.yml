@@ -23,8 +23,8 @@ jobs:
 
       - name: Run Black and Apply Formatting
         run: |
-          black `git ls-files '*.py'`
-          isort `git ls-files '*.py'`
+          black *.py
+          isort *.py
 
       - name: Show changes
         run: |
