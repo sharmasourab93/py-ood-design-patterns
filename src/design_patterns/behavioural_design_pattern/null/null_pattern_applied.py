@@ -3,7 +3,7 @@ import abc
 
 class AbsClass(object):
     __metaclass__ = abc.ABCMeta
-    
+
     @abc.abstractmethod
     def do_something(self, value):
         pass
@@ -17,7 +17,7 @@ class MyClass(AbsClass):
 class MyObjectFactory:
     @staticmethod
     def create_object(value):
-        if value == 'myclass':
+        if value == "myclass":
             return MyClass()
         else:
             return NullClass()
@@ -28,7 +28,7 @@ class NullClass(AbsClass):
         print("Not Doing %s." % value)
 
 
-if __name__ == '__main__':
-    my_obj = MyObjectFactory.create_object('myotherclass')
+if __name__ == "__main__":
+    my_obj = MyObjectFactory.create_object("myotherclass")
     # my_obj = MyObjectFactory.create_object('myclass')
-    my_obj.do_something('something')
+    my_obj.do_something("something")

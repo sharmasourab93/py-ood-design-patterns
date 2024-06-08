@@ -11,10 +11,10 @@ class Computer(object):
 
 
 class CheapOne(object):
-    
+
     def get_computer(self):
         return self._computer
-    
+
     def build_computer(self):
         computer = self._computer = Computer()
         self.get_case()
@@ -22,10 +22,10 @@ class CheapOne(object):
         self.install_mainboard()
         self.hard_drive()
         self.video_card()
-    
+
     def get_case(self):
         self._computer.case = "CoolerMaster N300"
-        
+
     def mainboard(self):
         self._computer.mainboard = "MSI 970"
         self._computer.cpu = "AMD Athlon COre i7-4770"
@@ -41,7 +41,7 @@ class CheapOne(object):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     builder = CheapOne()
     builder.build_computer()
     computer = builder.get_computer()

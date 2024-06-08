@@ -1,9 +1,10 @@
 from .abs_decorator import AbsDecorator
 
+
 class Vinyl(AbsDecorator):
     @property
     def description(self):
-        return self.car.description + ', vinyl upholstery'
+        return self.car.description + ", vinyl upholstery"
 
     @property
     def cost(self):

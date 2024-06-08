@@ -3,10 +3,11 @@ OPEN CLosed
 Dependency Inversion Principle
 """
 
+
 class ChevyVolt(object):
     def start(self):
         print("Chevrolet Volt Running with  Shocking Power")
-    
+
     def stop(self):
         print("Chevrolet Volt Shutting Down.")
 
@@ -14,7 +15,7 @@ class ChevyVolt(object):
 class FordFocus:
     def start(self):
         print("Ford Focus Running with  Shocking Power")
-    
+
     def stop(self):
         print("Ford Focus Shutting Down.")
 
@@ -22,7 +23,7 @@ class FordFocus:
 class JeepSahara:
     def start(self):
         print("Jeep Sahara Running with  Shocking Power")
-    
+
     def stop(self):
         print("Jeep Sahara Shutting Down.")
 
@@ -30,10 +31,10 @@ class JeepSahara:
 class NullCar:
     def __init__(self, carname):
         self._carname = carname
-        
+
     def start(self):
         print("Unknown car {0}".format(self._carname))
-    
+
     def stop(self):
         pass
 
@@ -48,10 +49,10 @@ def getcar(carname):
         return JeepSahara()
     else:
         return NullCar(carname)
-    
 
-if __name__ == '__main__':
-    for carname in ['Chevy', 'Ford', 'Jeep', 'Tesla']:
+
+if __name__ == "__main__":
+    for carname in ["Chevy", "Ford", "Jeep", "Tesla"]:
         car = getcar(carname)
         car.start()
         car.stop()

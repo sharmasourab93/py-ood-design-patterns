@@ -7,15 +7,15 @@ Python: Object Oriented Programming
 class MyClass:
 
     def method(self):
-        return 'instance method called', self
+        return "instance method called", self
 
     @classmethod
     def class_method(cls):
-        return 'cls method called', cls
+        return "cls method called", cls
 
     @staticmethod
     def static_method():
-        return 'static method called'
+        return "static method called"
 
 
 if __name__ == "__main__":

@@ -10,7 +10,7 @@ closed for modification.
 class SurveryValidator:
     def __init__(self):
         pass
-    
+
     def validate(self):
         if self.data.answer1 is None:
             raise ValidationError("No answer 1 provided")

@@ -20,11 +20,11 @@ class Employee:
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
-        self.email = first+'.'+last+'@email.com'
+        self.email = first + "." + last + "@email.com"
         self.pay = pay
 
     def fullname(self):
-        return '{} {}'.format(self.first, self.last)
+        return "{} {}".format(self.first, self.last)
 
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amt)
@@ -45,7 +45,7 @@ class Developer(Employee):
 class Manager(Employee):
 
     def __init__(self, first, last, pay, employees=None):
-        #Extending Base Class
+        # Extending Base Class
         # init Constructor
         super().__init__(first, last, pay)
 
@@ -68,7 +68,7 @@ class Manager(Employee):
     def print_emp(self):
 
         for emp in self.employees:
-            print('-->', emp.fullname())
+            print("-->", emp.fullname())
 
     # Official string representation of an object
     def __repr__(self):
@@ -76,17 +76,17 @@ class Manager(Employee):
 
     # Informal string representation of an object
     def __str__(self):
-        return '{}-{}'.format(self.fullname(), self.email)
+        return "{}-{}".format(self.fullname(), self.email)
 
 
-if __name__ == '__main__':
-    dev1 = Developer('Sourab', 'Sharma', 50000, 'Python')
-    dev2 = Developer('Test', 'Employee', 60000, 'Java')
+if __name__ == "__main__":
+    dev1 = Developer("Sourab", "Sharma", 50000, "Python")
+    dev2 = Developer("Test", "Employee", 60000, "Java")
 
     print(Developer.apply_raise(dev1))
     print(dev1.fullname())
 
-    mgr1 = Manager('Shri', 'Balaji', 90000, [dev1])
+    mgr1 = Manager("Shri", "Balaji", 90000, [dev1])
     print(mgr1)
 
     mgr1.add_emp(dev2)

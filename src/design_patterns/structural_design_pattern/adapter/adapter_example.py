@@ -1,15 +1,15 @@
-TYPE = 'vendors'
+TYPE = "vendors"
 
 
 class Customer(object):
     def __init__(self, name, address):
         self._name = name
         self._address = address
-        
+
     @property
     def name(self):
         return self._name
-    
+
     @property
     def address(self):
         return self._address
@@ -20,15 +20,15 @@ class Vendor(object):
         self._name = name
         self._number = number
         self._street = street
-        
+
     @property
     def name(self):
         return self._name
-    
+
     @property
     def number(self):
         return self._number
-    
+
     @property
     def street(self):
         return self._street
@@ -37,7 +37,7 @@ class Vendor(object):
 MOCK_CUSTOMERS = (
     Customer("Pizza Love", "33 Pepproni Lane"),
     Customer("Happy & Green", "25 Kale St."),
-    Customer("Sweet Tooth", "42 Chocolate Ave.")
+    Customer("Sweet Tooth", "42 Chocolate Ave."),
 )
 
 
@@ -48,16 +48,16 @@ MOCK_VENDORS = (
 )
 
 
-if __name__ == '__main__':
-    
-    if TYPE == 'customers':
+if __name__ == "__main__":
+
+    if TYPE == "customers":
         for cust in MOCK_CUSTOMERS:
-            print("Name: %s; Address: %s"% (cust.name, cust.address))
-    elif TYPE == 'vendors':
+            print("Name: %s; Address: %s" % (cust.name, cust.address))
+    elif TYPE == "vendors":
         for vend in MOCK_VENDORS:
-            print("Name: {}; Number: {}, {}; ".format(vend.name,
-                                                    vend.number,
-                                                    vend.street))
-    
+            print(
+                "Name: {}; Number: {}, {}; ".format(vend.name, vend.number, vend.street)
+            )
+
     else:
-        raise ValueError('IncorrectType: ' + TYPE)
+        raise ValueError("IncorrectType: " + TYPE)

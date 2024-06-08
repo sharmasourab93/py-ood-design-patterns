@@ -23,8 +23,8 @@ class Child(Parent):
         self.parent = parent
         self.firstname = firstname
         self.lastname = parent.lastname
-        
-        
+
+
 """It is definitely not good to inherit Child from Parent or
     Parent from Child.
    The correct way to do it is to make a base class,

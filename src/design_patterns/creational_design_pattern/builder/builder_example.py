@@ -11,7 +11,7 @@ class Computer(object):
         self.memory = memory
         self.hard_drive = hard_drive
         self.video_card = video_card
-    
+
     def display(self):
         print("Custom Computer:")
         print("\t{:>10}: {}".format("Case", self.case))
@@ -22,14 +22,14 @@ class Computer(object):
         print("\t{:>10}: {}".format("Video Card", self.video_card))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     computer = Computer(
         case="CoolerMaster N300",
         mainboard="MSI 970",
         cpu="Intel COre i7-4770",
         memory="Corsair Vengeance 16Gb",
         hard_drive="Seagate 2TB",
-        video_card="GeForce GTX 1070"
-        )
-    
+        video_card="GeForce GTX 1070",
+    )
+
     computer.display()

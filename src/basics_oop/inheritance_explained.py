@@ -24,14 +24,16 @@ class Employee(Person):
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Person 1 Geeks 1
     emp = Person("Geeks1")
     print("Person's Name", emp.get_name())
     print("Is Person an Employee?", emp.is_employee())
 
     # isinstance explained
-    print("Is Person 1 an isinstance of Employee", isinstance(emp, Employee), end="\n\n")
+    print(
+        "Is Person 1 an isinstance of Employee", isinstance(emp, Employee), end="\n\n"
+    )
 
     # Person 2 Employee 1 Geeks 2
     emp1 = Employee("Geeks2")

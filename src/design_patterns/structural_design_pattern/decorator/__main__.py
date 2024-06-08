@@ -1,7 +1,7 @@
 from .decorator_applied_final import Economy
+from .decos.black import Black
 from .decos.v6 import V6
 from .decos.vinyl import Vinyl
-from .decos.black import Black
 
 
 def main():
@@ -16,8 +16,8 @@ def main():
 
 
 def show(car):
-    print('Description: {}; cost: ${}'.format(car.description, car.cost))
+    print("Description: {}; cost: ${}".format(car.description, car.cost))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

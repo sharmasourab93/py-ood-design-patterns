@@ -13,7 +13,7 @@ class Foo:
     lol = 10
 
     def __init__(self):
-        self.bar = 'barry'
+        self.bar = "barry"
 
     def too(self):
         return self.bar
@@ -23,10 +23,10 @@ class Foo:
         # Static method cannot access
         # internal members of the class
         # print(self.bar) throws an error
-        print("Static prints "+bar)
+        print("Static prints " + bar)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = Foo()
     # Parameter passed to static method
     # using an instance obj method call

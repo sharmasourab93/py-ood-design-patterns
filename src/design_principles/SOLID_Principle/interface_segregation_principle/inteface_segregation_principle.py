@@ -15,16 +15,16 @@ This example discusses the User Interface for an ATM,
 
 
 class BankAccount:
-    
+
     def __init__(self, color, board):
         pass
-    
+
     def deposit(self):
         pass
-    
+
     def balance(self):
         pass
-    
+
     def withdraw(self):
         pass
 
@@ -32,13 +32,13 @@ class BankAccount:
 class BankAccountProxy:
     def __init__(self, account: BankAccount):
         self.account = account
-    
+
     def deposit(self):
         pass
-    
+
     def balance(self):
         pass
-    
+
     def withdraw(self):
         pass
 
@@ -46,10 +46,10 @@ class BankAccountProxy:
 class OnlyWithdrawOperator:
     def __init__(self, proxy: BankAccountProxy):
         self.account = account
-    
+
     def withdraw(self):
         pass
-    
+
     def balance(self):
         pass
 
@@ -57,7 +57,7 @@ class OnlyWithdrawOperator:
 class OnlyDepositOperator:
     def __init__(self, proxy: BankAccountProxy):
         self.account = account
-    
+
     def deposit(self):
         pass
 

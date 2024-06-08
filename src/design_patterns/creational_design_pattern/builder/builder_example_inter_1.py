@@ -5,6 +5,7 @@ Attributes are encapsulated
 Ordering Problem still exists 
 """
 
+
 class Computer(object):
 
     def display(self):
@@ -18,10 +19,10 @@ class Computer(object):
 
 
 class MyComputer(object):
-    
+
     def get_computer(self):
         return self._computer
-    
+
     def build_computer(self):
         computer = self._computer = Computer()
         computer.case = "CoolerMaster N300"
@@ -32,7 +33,7 @@ class MyComputer(object):
         computer.video_card = "GeForce GTX 1070"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     builder = MyComputer()
     builder.build_computer()
     computer = builder.get_computer()

@@ -17,7 +17,7 @@ class Person(object):
         self.lastname = lastname
 
     def get_name(self):
-        return '%s %s' % (self.firstname, self.lastname)
+        return "%s %s" % (self.firstname, self.lastname)
 
 
 class Parent(Person):

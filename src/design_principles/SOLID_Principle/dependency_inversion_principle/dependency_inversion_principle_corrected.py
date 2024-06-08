@@ -1,4 +1,3 @@
-
 class Employee(object):
     def work(self):
         pass
@@ -7,7 +6,7 @@ class Employee(object):
 class Manager:
     def __init__(self):
         self.employees = []
-    
+
     def add_employee(self, a):
         self.employees.append(a)
 
@@ -15,7 +14,7 @@ class Manager:
 class Developer(Employee):
     def __init__(self):
         print("developer added")
-    
+
     def work(self):
         print("turning coffee into code")
 
@@ -23,7 +22,7 @@ class Developer(Employee):
 class Designer(Employee):
     def __init__(self):
         print("designer added")
-    
+
     def work(self):
         print("turning lines to wireframes")
 
@@ -31,7 +30,7 @@ class Designer(Employee):
 class Testers(Employee):
     def __init__(self):
         print("tester added")
-    
+
     def work(self):
         print("testing everything out there")
 

@@ -7,14 +7,14 @@ Python: Object Oriented Programming
 class CSStudent:
 
     # Class Variable
-    stream = 'cse'
+    stream = "cse"
 
     def __init__(self, name, roll):
         self.name = name
         self.roll = roll
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = CSStudent("Geek", 1)
     b = CSStudent("Nerd", 2)
 

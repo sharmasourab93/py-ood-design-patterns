@@ -1,5 +1,5 @@
 class Computer(object):
-    
+
     def display(self):
         print("Custom Computer:")
         print("\t{:>10}: {}".format("Case", self.case))
@@ -10,7 +10,7 @@ class Computer(object):
         print("\t{:>10}: {}".format("Video Card", self.video_card))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Directly
     # Maintainance En
     # Encapsulate what varies
@@ -21,5 +21,5 @@ if __name__ == '__main__':
     computer.memory = "Corsair Vengeance 16Gb"
     computer.hard_drive = "Seagate 2TB"
     computer.video_card = "GeForce GTX 1070"
-    
+
     computer.display()

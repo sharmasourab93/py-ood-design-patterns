@@ -8,13 +8,13 @@ class Manager(object):
         self.developers = []
         self.designers = []
         self.testers = []
-    
+
     def add_developer(self, dev):
         self.developers.append(dev)
-    
+
     def add_designers(self, design):
         self.designers.append(design)
-    
+
     def add_testers(self, testers):
         self.testers.append(testers)
 

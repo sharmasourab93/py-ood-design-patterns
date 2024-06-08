@@ -14,19 +14,19 @@ https://stackoverflow.com/questions/55477952/need-clarity-in-understanding-lisko
 
 
 class Switch:
-   def __init__(self, ip, dc):
-       self.ip = ip
-       self.dc = dc
+    def __init__(self, ip, dc):
+        self.ip = ip
+        self.dc = dc
 
 
 class CiscoSwitch(Switch):
-   def __init__(self, ip, dc, zone):
-       super().__init__(ip, dc)
-       self.zone = zone
+    def __init__(self, ip, dc, zone):
+        super().__init__(ip, dc)
+        self.zone = zone
 
 
 class JuniperSwitch(Switch):
-   
-   def __init__(self, ip, dc, zone):
-       super().__init__(ip, dc)
-       self.zone = zone
+
+    def __init__(self, ip, dc, zone):
+        super().__init__(ip, dc)
+        self.zone = zone

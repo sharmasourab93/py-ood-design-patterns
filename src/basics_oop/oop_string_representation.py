@@ -13,6 +13,7 @@ https://stackoverflow.com/questions/1436703/difference-between-str-and-repr
 
 class Test:
     """Test Class Explaining __str__ vs __repr__"""
+
     def __init__(self, a, b):
         self.a = a
         self.b = b
@@ -26,7 +27,7 @@ class Test:
         return "From str method of Test: a is %s," "b is %s" % (self.a, self.b)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_obj = Test(1234, 5678)
 
     # This calls __str__()

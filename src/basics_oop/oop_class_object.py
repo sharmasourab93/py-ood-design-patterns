@@ -21,20 +21,20 @@ class Robot:
         Robot.population -= 1
 
         if Robot.population == 0:
-            print(self.name+" was the last one")
+            print(self.name + " was the last one")
 
         else:
             print("There are still {} robots walking".format(Robot.population))
 
     def say_hi(self):
-        print("Greetings my masters call me "+ self.name)
+        print("Greetings my masters call me " + self.name)
 
     @classmethod
     def how_many(cls):
         print("we have {} robots".format(cls.population))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     droid1 = Robot("R2-D2")
     droid1.say_hi()
     Robot.how_many()

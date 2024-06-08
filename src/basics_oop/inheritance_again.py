@@ -10,7 +10,7 @@ class SchoolMember:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        print('(Initialized School Member: {})'.format(self.name))
+        print("(Initialized School Member: {})".format(self.name))
 
     def tell(self):
         print('Name:"{}" Age:"{}"'.format(self.name, self.age), end=" ")
@@ -25,7 +25,7 @@ class Teacher(SchoolMember):
         SchoolMember.__init__(self, name, age)
 
         self.salary = salary
-        print('(Employed teacher:{})'.format(self.name), end="\n\n")
+        print("(Employed teacher:{})".format(self.name), end="\n\n")
 
     def tell(self):
         SchoolMember.tell(self)
@@ -43,12 +43,12 @@ class Student(SchoolMember):
         SchoolMember.__init__(self, name, age)
 
         self.marks = marks
-        print('(Admitted Student:{})'.format(self.name), end="\n\n")
+        print("(Admitted Student:{})".format(self.name), end="\n\n")
 
     def tell(self):
         SchoolMember.tell(self)
 
-        print('Marks: {}'.format(self.marks))
+        print("Marks: {}".format(self.marks))
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ Python: Object Oriented Programming
 
 class MyClass:
 
-    #Hidden with __
+    # Hidden with __
     __hidden = 0
 
     def add(self, increment):
@@ -14,7 +14,7 @@ class MyClass:
         print(self.__hidden)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     my_class_obj = MyClass()
     my_class_obj.add(2)
     my_class_obj.add(10)

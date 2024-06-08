@@ -1,7 +1,8 @@
-from .abs_factory import AbsFactory
-from autos.gm.spark import ChevySpark
-from autos.gm.camaro import ChevyCamaro
 from autos.gm.cadillac import CadillacCTS
+from autos.gm.camaro import ChevyCamaro
+from autos.gm.spark import ChevySpark
+
+from .abs_factory import AbsFactory
 
 
 class GMFactory(AbsFactory):

@@ -10,17 +10,17 @@ class Pizza:
         self.ingredients = ingredients
 
     def __str__(self):
-        return ' '.join(self.ingredients)
+        return " ".join(self.ingredients)
 
     @classmethod
     def margherita(cls):
-        return cls(['mozarella', 'tomotoes'])
+        return cls(["mozarella", "tomotoes"])
 
     @classmethod
     def prosciutto(cls):
-        return cls(['mozarella', 'tomatoes', 'ham'])
+        return cls(["mozarella", "tomatoes", "ham"])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Pizza.margherita())
     print(Pizza.prosciutto())
