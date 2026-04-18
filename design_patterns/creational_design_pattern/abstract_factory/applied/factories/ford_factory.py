@@ -1,6 +1,6 @@
-from autos.ford.fiesta import FordFiesta
-from autos.ford.lincoln import LincolnMKS
-from autos.ford.mustang import FordMustang
+from ..autos.ford.fiesta import FordFiesta
+from ..autos.ford.lincoln import LincolnMKS
+from ..autos.ford.mustang import FordMustang
 
 from .abs_factory import AbsFactory
 

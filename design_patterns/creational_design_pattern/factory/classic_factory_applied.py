@@ -11,8 +11,13 @@ class AbsAuto(abc.ABC):
         pass
 
     @property
+    def name(self):
+        return self._carname
+
+    @name.setter
     def name(self, name):
         self._name = name
+        self._carname = name
 
     @abc.abstractmethod
     def stop(self):
@@ -37,6 +42,6 @@ class ChevyVolt(AbsAuto):
 class ChevyFactory(AbsFactory):
 
     def create_auto(self):
-        self.chevy = chevy = ChevyVolt()
+        self.chevy = chevy = ChevyVolt("Chevy Volt")
         chevy.name = "Chevy Volt"
         return chevy

@@ -1,26 +1,23 @@
 # Design Principles
-### What are Software Design Principles?
 
-1. [SOLID Principle](https://en.wikipedia.org/wiki/SOLID) 
-    1. [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) 
-    2. [Open Close Principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) 
-    3. [Liskov Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
-    4. [Interface Segregation Principle](https://en.wikipedia.org/wiki/Interface_segregation_principle)  
-    5. [Dependency Inversion Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
-    
-2. [GRASP](https://en.wikipedia.org/wiki/GRASP_(object-oriented_design) (General Responsibility Assignment Software Pattern)
+Design principles explain what makes object-oriented code easier to extend, maintain, and reason about. In this repository, this section is a revision layer before the design pattern examples.
 
-3. Other Important Principles  
-    1. [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) (You aren't gonna need it)
-    2. [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (Don't Repeat Yourself)
-    3. [KISS](https://en.wikipedia.org/wiki/KISS_principle) (Keep It Simple Stupid)
+## What You Will Find Here
 
-4. Other Principles
-    1. Copy-and-paste Programming
-    2. Single Source of Truth (SSOT)
-    3. Separation of Concerns (SOC)
-    4. Structured Programming
-    5. Abstraction Principle 
-    6. Code Reuse 
-    7. Minimum Viable Product (MVP)
-    
+- short explanations of each principle
+- small code examples from the repository
+- before/after comparisons where applicable
+- quick takeaways for revision
+
+## Topics
+
+- [SOLID Principle](SOLID_Principle/README.md)
+
+## How To Use This Section
+
+- If you are revising quickly, open the principle folder directly.
+- If you are studying properly, read the flawed example first and then the improved version.
+
+## Why This Section Matters
+
+Design patterns are easier to understand when you already know what good design is trying to achieve. These principles explain that foundation.

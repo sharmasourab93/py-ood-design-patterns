@@ -5,7 +5,7 @@ class V6(AbsDecorator):
 
     @property
     def description(self):
-        return self.car.desciption + ", V6"
+        return self.car.description + ", V6"
 
     @property
     def cost(self):

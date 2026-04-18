@@ -1,4 +1,4 @@
-from autos.abs_auto import AbsAuto
+from ..abs_auto import AbsAuto
 
 
 class CadillacCTS(AbsAuto):

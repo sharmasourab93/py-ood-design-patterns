@@ -1,5 +1,5 @@
-from factories.ford_factory import FordFactory
-from factories.gm_factory import GMFactory
+from .factories.ford_factory import FordFactory
+from .factories.gm_factory import GMFactory
 
 if __name__ == "__main__":
     for factory in FordFactory, GMFactory:

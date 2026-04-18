@@ -1,7 +1,7 @@
 from random import randint
 
-from factories.ford import FordFiesta, FordMustang, LincolnMKS
-from factories.gm import CadillacCTS, ChevyCamaro, ChevySpark
+from .factories.ford import FordFiesta, FordMustang, LincolnMKS
+from .factories.gm import CadillacCTS, ChevyCamaro, ChevySpark
 
 makers = ("gm", "ford")
 editions = ("Econonmy", "Sport", "Luxury")
