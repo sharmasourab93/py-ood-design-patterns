@@ -61,6 +61,7 @@ if __name__ == "__main__":
 
     support_chain.handle(SupportRequest("Alice", "billing", "Refund request"))
     support_chain.handle(SupportRequest("Bob", "technical", "Cannot login"))
-    support_chain.handle(SupportRequest("Carol", "priority", "Production down"))
+    support_chain.handle(
+        SupportRequest("Carol", "priority", "Production down")
+    )
     support_chain.handle(SupportRequest("Dave", "general", "Need help"))
-

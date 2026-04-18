@@ -56,7 +56,10 @@ def main():
     )
 
     singles = Tree(
-        [Person("Marvin", date(1991, 1, 1)), Person("Slarti", date(1993, 9, 9))]
+        [
+            Person("Marvin", date(1991, 1, 1)),
+            Person("Slarti", date(1993, 9, 9)),
+        ]
     )
 
     loner = Person("Dirk", date(1990, 6, 6))

@@ -72,7 +72,9 @@ class Manager(Employee):
 
     # Official string representation of an object
     def __repr__(self):
-        return "Employee('{}','{}','{}')".format(self.first, self.last, self.pay)
+        return "Employee('{}','{}','{}')".format(
+            self.first, self.last, self.pay
+        )
 
     # Informal string representation of an object
     def __str__(self):

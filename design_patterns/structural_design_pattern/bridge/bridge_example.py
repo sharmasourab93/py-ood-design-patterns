@@ -25,4 +25,3 @@ class Alert:
 if __name__ == "__main__":
     Alert("Server CPU high", EmailSender()).send()
     Alert("Build failed", SlackSender()).send()
-

@@ -1,7 +1,6 @@
 from ..autos.gm.cadillac import CadillacCTS
 from ..autos.gm.camaro import ChevyCamaro
 from ..autos.gm.spark import ChevySpark
-
 from .abs_factory import AbsFactory
 
 

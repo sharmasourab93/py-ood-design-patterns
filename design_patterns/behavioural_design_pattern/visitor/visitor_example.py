@@ -28,4 +28,3 @@ if __name__ == "__main__":
 
     for item in items:
         print(round(item.accept(visitor), 2))
-

@@ -33,4 +33,3 @@ if __name__ == "__main__":
 
     alice.send("Build is green.")
     bob.send("Deploying to staging.")
-

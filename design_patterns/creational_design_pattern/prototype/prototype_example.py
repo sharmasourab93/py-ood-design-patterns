@@ -18,4 +18,3 @@ if __name__ == "__main__":
 
     print(report.title, report.sections)
     print(copy_report.title, copy_report.sections)
-

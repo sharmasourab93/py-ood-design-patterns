@@ -45,9 +45,13 @@ class Proxy(AbsEmployees):
         acc = AccessControls.get_access_control()
 
         for e in self._employees.get_employee_info(empids):
-            if e.empid == reqid or (reqid in acc and acc[reqid].can_see_personal):
+            if e.empid == reqid or (
+                reqid in acc and acc[reqid].can_see_personal
+            ):
                 # Show everything
-                yield Employee(e.empid, e.name, ("%.2f" % e.salary), e.birthdate)
+                yield Employee(
+                    e.empid, e.name, ("%.2f" % e.salary), e.birthdate
+                )
             else:  # Hide birth date and salary details
                 yield Employee(e.empid, e.name, "*****", "*****")
 

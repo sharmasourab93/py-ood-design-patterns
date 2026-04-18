@@ -32,7 +32,10 @@ def main():
         ]
     )
 
-    singles = [Person("Marvin", date(1991, 1, 1)), Person("Slarti", date(1993, 9, 9))]
+    singles = [
+        Person("Marvin", date(1991, 1, 1)),
+        Person("Slarti", date(1993, 9, 9)),
+    ]
 
     oldest = None
     earliest_date = date.max

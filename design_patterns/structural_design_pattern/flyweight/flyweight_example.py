@@ -38,4 +38,3 @@ if __name__ == "__main__":
 
     for tree in trees:
         tree.render()
-

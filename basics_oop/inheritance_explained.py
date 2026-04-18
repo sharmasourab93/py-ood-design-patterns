@@ -32,7 +32,9 @@ if __name__ == "__main__":
 
     # isinstance explained
     print(
-        "Is Person 1 an isinstance of Employee", isinstance(emp, Employee), end="\n\n"
+        "Is Person 1 an isinstance of Employee",
+        isinstance(emp, Employee),
+        end="\n\n",
     )
 
     # Person 2 Employee 1 Geeks 2

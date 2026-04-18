@@ -3,7 +3,9 @@ def create_objects(name, data, send=False, code=None):
     keys = ["{}:{}".format(*r) for r in data]
 
     existing_objects = dict(
-        Object.objects.filter(name=name, key__in=keys).values_list("key", "uid")
+        Object.objects.filter(name=name, key__in=keys).values_list(
+            "key", "uid"
+        )
     )
 
     with transaction.commit_on_success():
@@ -28,7 +30,12 @@ def create_objects(name, data, send=False, code=None):
                     else:
                         code = name_code
                     t = Object.objects.create(
-                        name=name, w=w, key=key, result=result, uid=uid, name_code=code
+                        name=name,
+                        w=w,
+                        key=key,
+                        result=result,
+                        uid=uid,
+                        name_code=code,
                     )
 
                     reannounce(t)
@@ -43,7 +50,8 @@ def create_objects(name, data, send=False, code=None):
                     if send:
                         if result.status == Result.STATUS1:
                             Result.objects.filter(id=result.id).update(
-                                status=Result.STATUS2, on_way_back_date=datetime.now()
+                                status=Result.STATUS2,
+                                on_way_back_date=datetime.now(),
                             )
                         else:
                             started(result)

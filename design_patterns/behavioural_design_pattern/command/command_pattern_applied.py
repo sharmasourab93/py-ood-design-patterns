@@ -65,7 +65,9 @@ class UpdateOrder(AbsCommand, AbsOrderCommand):
         # Simulate database update
         print("Updated Database")
         # Simulate logging the update
-        print("Logging: Updated Quantity from  %s to %s" % (oldqty, self.newqty))
+        print(
+            "Logging: Updated Quantity from  %s to %s" % (oldqty, self.newqty)
+        )
 
 
 class NoCommand(AbsCommand):

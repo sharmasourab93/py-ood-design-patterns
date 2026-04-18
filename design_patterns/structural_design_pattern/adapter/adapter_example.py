@@ -56,7 +56,9 @@ if __name__ == "__main__":
     elif TYPE == "vendors":
         for vend in MOCK_VENDORS:
             print(
-                "Name: {}; Number: {}, {}; ".format(vend.name, vend.number, vend.street)
+                "Name: {}; Number: {}, {}; ".format(
+                    vend.name, vend.number, vend.street
+                )
             )
 
     else:

@@ -65,7 +65,11 @@ class Bus(AbsTransport):
 
 
 def travel(destination, transport):
-    print(("Taking the {} to {}" + "===>").format(transport.__name__, destination))
+    print(
+        ("Taking the {} to {}" + "===>").format(
+            transport.__name__, destination
+        )
+    )
     means = transport(destination)
     means.take_trip()
 

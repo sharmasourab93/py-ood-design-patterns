@@ -29,7 +29,9 @@ def get_employee_info(empids, reqid):
             continue
 
         employee = EMPLOYEES[empid]
-        details = "Employee ID: {}, Name: {}".format(employee.empid, employee.name)
+        details = "Employee ID: {}, Name: {}".format(
+            employee.empid, employee.name
+        )
 
         if reqid in ACCESSCONTROL:
             if ACCESSCONTROL[reqid].can_see_personal:

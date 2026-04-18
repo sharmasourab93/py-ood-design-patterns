@@ -84,7 +84,9 @@ for deptid, name, date_estb in TESTDEPARTMENTS:
 def print_summary(collection):
     for item in collection:
         print(
-            "Item Id: {}; Name:{}; Dated: {}".format(item.number, item.name, item.date)
+            "Item Id: {}; Name:{}; Dated: {}".format(
+                item.number, item.name, item.date
+            )
         )
 
 

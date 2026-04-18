@@ -43,4 +43,3 @@ if __name__ == "__main__":
 
     editor.restore(history.pop())
     print(editor.content)
-
